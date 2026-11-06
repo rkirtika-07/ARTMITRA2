@@ -1,0 +1,100 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FULL SCREEN */
+html,
+body,
+#root {
+  width: 100%;
+  min-width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* MAIN APP */
+#root {
+  max-width: none !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVIGATION */
+nav,
+.navbar {
+  width: 100%;
+  max-width: none;
+}
+
+/* HOME PAGE */
+main,
+.home,
+.home-container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* HERO SECTION */
+.hero,
+.hero-section,
+.banner {
+  width: 100%;
+  max-width: none;
+  min-height: 450px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* CONTENT SECTIONS */
+section {
+  width: 100%;
+  max-width: none;
+}
+
+/* ARTWORK GALLERY */
+.gallery,
+.artwork-container,
+.artwork-grid {
+  width: 100%;
+  max-width: none;
+}
+
+/* IMAGES */
+img {
+  max-width: 100%;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .hero,
+  .hero-section,
+  .banner {
+    min-height: 300px;
+  }
+
+  nav,
+  .navbar {
+    flex-wrap: wrap;
+  }
+}

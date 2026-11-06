@@ -1,0 +1,119 @@
+.user-dashboard {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fdf2ff, #e0e7ff, #ffe4ec);
+  font-family: Arial, sans-serif;
+}
+
+.user-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 7%;
+  background: white;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.user-navbar h2 {
+  color: #764ba2;
+  font-size: 28px;
+}
+
+.user-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.user-nav-links a {
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+}
+
+.user-nav-links button {
+  background: #764ba2;
+  color: white;
+  border: none;
+  padding: 11px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.user-welcome {
+  text-align: center;
+  padding: 75px 20px 45px;
+}
+
+.user-welcome h1 {
+  font-size: 40px;
+  color: #764ba2;
+}
+
+.user-welcome p {
+  color: #666;
+  font-size: 18px;
+}
+
+.user-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 30px 7%;
+}
+
+.user-card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.user-card:hover {
+  transform: translateY(-7px);
+}
+
+.user-card h2 {
+  color: #764ba2;
+}
+
+.user-card p {
+  color: #777;
+  line-height: 1.6;
+}
+
+.user-card button {
+  background: linear-gradient(90deg, #764ba2, #e056fd);
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.user-footer {
+  text-align: center;
+  padding: 25px;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .user-options {
+    grid-template-columns: 1fr;
+  }
+
+  .user-navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .user-nav-links {
+    gap: 15px;
+  }
+
+  .user-welcome h1 {
+    font-size: 30px;
+  }
+}
